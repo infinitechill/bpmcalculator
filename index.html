@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- INFINITE CHILL -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<!-- put HTML code here -->
+<h1>
+bpmcalculator
+</h1>
+
+<p>
+<form name="bpmvalue" action="">
+  Enter a BPM: <input type="text" id="bpm">
+  <input type="button" value="CALCULATE" onclick="return buttonClicked();">
+</form>
+</p>
+
+<p>
+<table id="notevalues" width="500">
+<tr><td width="50%">NOTE VALUE</td><td width="50%">NOTE DURATION IN SECONDS</td></tr>
+<tr><td width="50%">Whole Note: </td><td width="50%"><div id="wholenote"></div></td></tr>
+<tr><td width="50%">Half Note: </td><td width="50%"><div id="halfnote"></div></td></tr>
+<tr><td width="50%">Quarter Note: </td><td width="50%"><div id="quarternote"></div></td></tr>
+<tr><td width="50%">Eightth Note: </td><td width="50%"><div id="eighthnote"></div></td></tr>
+<tr><td width="50%">Sixteenth Note: </td><td width="50%"><div id="sixteenthnote"></div></td></tr>
+</table>
+</p>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+

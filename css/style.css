@@ -1,0 +1,27 @@
+
+body {
+    color: purple;
+    background: lightyellow;
+}
+
+h1 {
+    color: green;
+}
+
+h2 {
+    color: red;
+}
+
+p {
+    color: purple;
+}
+
+#mydate {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+table, th, td {
+   border: 1px solid purple;
+}
+

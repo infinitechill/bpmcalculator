@@ -1,0 +1,32 @@
+Note durations
+
+Given a tempo in beats-per-minute (BPM), it is possible to determine the exact duration of a particular note, such as quarter notes, eighths, sixteenths, and the dotted and triplet variations thereof. This is handy for dialing in rhythmic delay times. The conversion is from beats-per-minute to seconds-per-beat. A quarter note at 60bpm will last exactly 1 second (1000ms).
+
+Half note               =  120 / BPM
+Quarter note            =   60 / BPM
+Eighth note             =   30 / BPM
+Sixteenth note          =   15 / BPM
+Dotted-quarter note     =   90 / BPM
+Dotted-eighth note      =   45 / BPM
+Dotted-sixteenth note   = 22.5 / BPM
+Triplet-quarter note    =   40 / BPM
+Triplet-eighth note     =   20 / BPM
+Triplet-sixteenth note  =   10 / BPM
+
+So, if you have a tempo of 98bpm, and want to hear delayed notes as triplet quarter notes, you would divide 40 by 98, giving a result of 0.408 seconds (408ms) to set your delay time to.
+Hertz
+
+On the other hand, many modulation effects such as chorus and tremolo operate in terms of Hertz - how many times the modulation cycles up and back down in one second - rather than in terms of how long a single cycle takes. If you want to dial in such an effect based on tempo, the math is strikingly similar. You simply turn beats-per-minute into beats-per-second. A quarter note at 60bpm equals 1 Hz.
+
+Half note                 = BPM / 120
+Quarter note              = BPM / 60
+Eighth note               = BPM / 30
+Sixteenth note            = BPM / 15
+Dotted-quarter note       = BPM / 90
+Dotted-eighth note        = BPM / 45
+Dotted-sixteenth note     = BPM / 22.5
+Triplet-quarter note      = BPM / 40
+Triplet-eighth note       = BPM / 20
+Triplet-sixteenth note    = BPM / 10
+
+In the same 98bpm example as above, if you wanted to dial in a phaser that pulses on eighth notes, you would divide 98 by 30, which equals 3.267 Hz, that being how many eighth-notes happen in one second at 98bpm.
