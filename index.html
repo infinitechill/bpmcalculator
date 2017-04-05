@@ -11,25 +11,50 @@
 bpmcalculator
 </h1>
 
+
 <p>
 <form name="bpmvalue" action="">
   Enter a BPM: <input type="text" id="bpm">
-  <input type="button" value="CALCULATE" onclick="return buttonClicked();">
+  <input type="button" value="CALCULATE" onclick="return buttonClicked();"><a href="help.html">more info</a>
 </form>
 </p>
 
 <p>
-<table id="notevalues" width="500">
-<tr><td width="50%">NOTE VALUE</td><td width="50%">NOTE DURATION IN SECONDS</td></tr>
-<tr><td width="50%">Whole Note: </td><td width="50%"><div id="wholenote"></div></td></tr>
-<tr><td width="50%">Half Note: </td><td width="50%"><div id="halfnote"></div></td></tr>
-<tr><td width="50%">Quarter Note: </td><td width="50%"><div id="quarternote"></div></td></tr>
-<tr><td width="50%">Eightth Note: </td><td width="50%"><div id="eighthnote"></div></td></tr>
-<tr><td width="50%">Sixteenth Note: </td><td width="50%"><div id="sixteenthnote"></div></td></tr>
+<table id="notevaluesinmilliseconds" width="500">
+<tr><td width="50%"><b>NOTE VALUE</b></td><td width="50%"><b>DURATION IN MILLISECONDS</b></td></tr>
+<tr><td width="50%">Whole Note: </td><td width="50%"><div id="wholenotemilliseconds"></div></td></tr>
+<tr><td width="50%">Half Note: </td><td width="50%"><div id="halfnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Quarter Note: </td><td width="50%"><div id="quarternotemilliseconds"></div></td></tr>
+<tr><td width="50%">Eightth Note: </td><td width="50%"><div id="eighthnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Sixteenth Note: </td><td width="50%"><div id="sixteenthnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Dotted-quarter Note: </td><td width="50%"><div id="dottedquarternotemilliseconds"></div></td></tr>
+<tr><td width="50%">Dotted-eighth Note: </td><td width="50%"><div id="dottedeighthnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Dotted-sixteenth Note: </td><td width="50%"><div id="dottedsixteenthnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Triplet-quarter Note: </td><td width="50%"><div id="tripletquarternotemilliseconds"></div></td></tr>
+<tr><td width="50%">Triplet-eighth Note: </td><td width="50%"><div id="tripleteighthnotemilliseconds"></div></td></tr>
+<tr><td width="50%">Triplet-sixteenth Note: </td><td width="50%"><div id="tripletsixteenthnotemilliseconds"></div></td></tr>
 </table>
 </p>
 
-<script type="text/javascript" src="js/script.js"></script>
+<p>
+<table id="notevaluesinhertz" width="500">
+<tr><td width="50%"><b>NOTE VALUE</b></td><td width="50%"><b>HERTZ / FREQ</b></td></tr>
+<tr><td width="50%">Whole Note: </td><td width="50%"><div id="wholenotehertz"></div></td></tr>
+<tr><td width="50%">Half Note: </td><td width="50%"><div id="halfnotehertz"></div></td></tr>
+<tr><td width="50%">Quarter Note: </td><td width="50%"><div id="quarternotehertz"></div></td></tr>
+<tr><td width="50%">Eightth Note: </td><td width="50%"><div id="eighthnotehertz"></div></td></tr>
+<tr><td width="50%">Sixteenth Note: </td><td width="50%"><div id="sixteenthnotehertz"></div></td></tr>
+<tr><td width="50%">Dotted-quarter Note: </td><td width="50%"><div id="dottedquarternotehertz"></div></td></tr>
+<tr><td width="50%">Dotted-eighth Note: </td><td width="50%"><div id="dottedeighthnotehertz"></div></td></tr>
+<tr><td width="50%">Dotted-sixteenth Note: </td><td width="50%"><div id="dottedsixteenthnotehertz"></div></td></tr>
+<tr><td width="50%">Triplet-quarter Note: </td><td width="50%"><div id="tripletquarternotehertz"></div></td></tr>
+<tr><td width="50%">Triplet-eighth Note: </td><td width="50%"><div id="tripleteighthnotehertz"></div></td></tr>
+<tr><td width="50%">Triplet-sixteenth Note: </td><td width="50%"><div id="tripletsixteenthnotehertz"></div></td></tr>
+</table>
+</p>
+
+
+
+<script type="text/javascript" src="js/bpmcalculator.js"></script>
 </body>
 </html>
-

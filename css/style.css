@@ -1,7 +1,9 @@
 
 body {
+	margin: 25px;
     color: purple;
-    background: lightyellow;
+    background: lavender;
+    font-size: 20px;
 }
 
 h1 {
@@ -21,7 +23,17 @@ p {
 	font-weight: bold;
 }
 
-table, th, td {
+table {
+   border: 5px dotted purple;
+}
+
+th, td {
    border: 1px solid purple;
+}
+
+a{
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
 }
 
